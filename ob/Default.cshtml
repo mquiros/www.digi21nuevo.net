@@ -1,0 +1,116 @@
+﻿@{
+  Layout= "~/Shared/_Layout.cshtml";
+    Page.Title = "Bienvenido a OrtoBatch";
+    Page.head = "OrtoBatch";
+    Page.keywords = "Ortofot digital, rectificación, mosaico, foto mosaico, ajuste radiométrico, ineterpolación bilineal bicúbica";
+    Page.description="Digi21.net presenta OrtoBatch";      
+}
+
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <script >
+<!--
+// To load a movie other then the first one listed in the xml file you can pass the number
+// of the movie to load in the "movie" query string parameter.
+// To load the third movie you would do the following:
+//
+// template.html?movie=3
+//
+var param = "";
+var args = new Object();
+var query = location.search.substring(1);     
+// Get query string
+var pairs = query.split(",");
+// Break at comma
+for(var i = 0; i < pairs.length; i++) {
+	var pos = pairs[i].indexOf('=');
+	if (pos == -1) continue; // Look for "name=value"
+	var argname = pairs[i].substring(0,pos); // If not found, skip
+	var value = pairs[i].substring(pos+1); // Extract the name
+	args[argname] = unescape(value); // Extract the value
+}
+if (args.movie) param = "?movieNum=" + parseInt(args.movie);
+//-->
+</script> 
+
+    </head>
+    <body>
+       <div id="contentIz">
+           <div class="post">	<p class="subtitle">Ortofoto digital</p>  </div>
+            <p>Aplicación <b>todo en uno</b> para la creación de ortofotos + ajuste radiométrico + mosaico + corte en hojas de las ortofotos resultantes.</p>
+			<p>Interface de usuario rápido e intuitivo, no consume memoria, soporta diferentes algoritmos de ajuste radiométrico, admite múltiples formatos de                  archivos de entrada, múltiples formatos de archivos de georeferenciación...</p>
+			<p>Se adapta al método de trabajo de cada empresa, permitiendo especificar independientemente directorios con fotografías a rectificar, directorio con               los archivos de modelos digitales del terreno, directorio de salida, permite paremetrizar independientemente cada imagen (tamaños, porcentajes de                  solape...)</p>
+				
+				
+            <!--				<p><img src="ob.gif" alt="Captura de pantalla de Ortobatch"></img></p> -->
+
+           <table style="  width:987px" border="0" >
+            <tr>
+                <td style="width:1%"><img src="images/crn_toplft.gif" width="58" height="27" alt="a"></td>
+                <td style="width:98% ; background:url(images/side_top.gif)">&nbsp;</td>
+                <td style="width:1%"><img src="images/crn_toprt.gif" width="58" height="27" alt="b"></td>
+
+            </tr>
+            </table>
+
+           <table style="width:987px" border="0" >
+            <tr>
+                <td width="1%" valign="top" background="images/side_left.gif"><img src="images/side_left.gif" width="13" height="126"></td>
+                <td width="99%"><!-- URL's used in the movie-->
+                <!-- text used in the movie-->
+                <script language="JavaScript">
+		        <!--
+      		    document.write("<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\"" );
+      		    document.write("codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0\"" );
+      		    document.write("width=\"961\" height=\"570\" id=\"movie\" align=\"\">" );
+      		    document.write("<param name=movie value=\"Orthobatch.swf" + param + "\">" );
+      		    document.write("<param name=quality value=high>" );
+      		    document.write("<param name=bgcolor value=#FFFFFF>" );
+      		    document.write("<embed src=\"Orthobatch.swf" + param + "\" quality=high bgcolor=#FFFFFF width=\"961\" height=\"570\" name=\"movie\" align=\"\"" );
+ 			    document.write("type=\"application/x-shockwave-flash\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" swLiveConnect=\"false\"></embed>");
+      		    document.write("</object>");
+                //-->
+	            </script>
+	            <noscript>
+
+		        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/ab#version=6,0,0,0"
+      		    width="961" height="570" id="movie" align="">
+      		    <param name=movie value="Orthobatch.swf">
+      		    <param name=quality value=high>
+      		    <param name=bgcolor value=#FFFFFF>
+      		    <embed src="Orthobatch.swf" quality=high bgcolor=#FFFFFF width="961" height="570" name="movie" align=""
+ 			    type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" swLiveConnect="false"></embed>
+      	        </object>
+	            </noscript>
+                </td>
+                <td width="1%" valign="top" background="images/side_rt.gif"><img src="images/side_rt.gif" width="13" height="126"></td>
+
+                 </tr>
+                </table>
+
+
+
+           <table style="  width:987px" border="0" >
+            <tr>
+                <td style="width:1%"><img src="images/crn_btmlft.gif" width="58" height="31" alt="a"></td>
+                <td style="width:98% ; background:url(images/side_btm.gif)">&nbsp;</td>
+                <td style="width:1%"><img src="images/crn_btmrt.gif" width="58" height="31" alt="b"></td>
+
+            </tr>
+            </table>
+
+
+
+
+
+       </div>
+        
+        <div id="contentDz">
+        
+        </div>
+         
+    </body>
+</html>

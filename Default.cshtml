@@ -1,0 +1,99 @@
+﻿@{
+    Layout= "~/Shared/_Layout.cshtml";
+    Page.Title = "Bienvenido a Digi21.net";
+    Page.head = "Digi21.net";
+    Page.keywords = "GIS SIG Fotogrametría Topografía Cartografía Ortofoto DTM MDT Aerotriangulación";
+    Page.description="Digi21.net software para GIS SIG topografía cartografía y fotogrametría digital";
+}
+
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+
+       @RenderPage("~/Shared/_Slidorion.cshtml")  
+    </head>
+
+    <body>
+
+        <div id="contentIz">
+
+            <div class="post">
+                <h1 class="title">Nuestros productos</h1>
+                <div id="slidorion">
+            <div id="slider">
+                <div class="slide"><a href="/digi3d/"><img src="/images/Pumarin.jpg" width="488" height="400" alt="Digi3D.NE"/></a></div>
+                <div class="slide"><a href="/mdtop/"><img src="http://www.digi21.net/mdtop/pantalla_mdtopx_05.jpg" width="488" height="400" alt="MDTopX"/></a></div>
+                <div class="slide"><a href="/digi3d/"><img src="/images/Digi3DLidar.png" width="488" height="400" alt="Digi3D"/></a></div>
+                <div class="slide"><a href="/topcal21/"><img src="/images/topcal21.jpg" width="488" height="400" alt="TopCal21"/></a></div>
+                <div class="slide"><a href="/aerotri/"><img src="/images/grafico.png" width="488" height="400" alt="Aerotri"/></a></div>
+            </div>
+            <div id="accordion">
+                <div class="link-header">Digi3D.net</div>
+                <div class="link-content">
+                    <p>Una completa estación de Fotogrametría Digital</p>
+                    <p>Permite realizar restitución estereoscópica y monoscópica de imágenes captadas con cámaras métricas y no métricas.</p>
+                    <p>Completa herramienta CAD con innumerables herramientas de dibujo para mapas, motor de topología, conexión con base de datos...</p>
+                </div>
+                <div class="link-header">MDTopX</div>
+                <div class="link-content">
+                    <p>Herramienta para la creación/manipulación de Modelos Digitales del Terreno.</p>
+                </div>
+                <div class="link-header">Digi3D.net</div>
+                <div class="link-content">
+                    <p>Digi3D con LIDAR</p>
+                </div>
+                <div class="link-header">TopCal21</div>
+                <div class="link-content">
+                    <p>Todos los problemas de cálculo generados en trabajos topográficos.</p>
+                </div>
+                <div class="link-header">Aerotri</div>
+                <div class="link-content">
+                    <p>Calcule aerotriangulaciones utilizando el método de haces, el más preciso y potente
+                                            ya que utiliza todos los datos en conjunto, aprovechando las observaciones al máximo.</p>
+                    <p>Calcule parámetros de autocalibración ...</p>
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="post">
+				<h2 class="title">&nbsp;</h2>
+				<p class="subtitle">Lo último de Digi3D.net</p>
+				<p>Trabaja sobre ShapeFile como si se tratase de archivos "bin"</p>
+                <a href="http://usandodigi3d.digi21.net/?p=321"> <p>Añadido soporte para trabajar con archivos Geomedia Datawarehouse (.mdb) ...</p></a> 
+				<div><img src="/images/Digi3DTopologias.png" width="488" height="350" alt="Digi3D Topología"/></div>
+			    <a href="http://usandodigi3d.digi21.net" class="button">Continua Leyendo</a>
+             </div>
+
+        </div>
+
+        <div id="contentDz">
+            					<section>
+							<div>
+                                <h2 >Digi3D.net</h2>
+								<a href="/digi3d/"><img src="/images/Pumarin.jpg"  width="350"  alt="Digi3D LIDAR" /></a>
+								
+								<p>Una completa estación de Fotogrametría Digital</p>
+                                <p>Permite realizar restitución estereoscópica y monoscópica de imágenes captadas con cámaras métricas y no métricas.</p>
+                                <p>Completa herramienta CAD/GIS con innumerables herramientas de dibujo para mapas, motor de topología, conexión con base de datos...</p>
+							</div>
+                           <br/>
+							<div>
+                                <h2 >MDTopX</h2>
+								<a href="/mdtop/"><img src="/mdtop/pantalla_mdtopx_05.jpg"  width="350" alt="MDTopX Modelos Digitales del Terreno" /></a>
+								<p> Herramienta para la creación/manipulación de Modelos Digitales del Terreno.</p>
+							</div>
+                            <br/>
+							<div>
+                                <h2 >Topcal21 </h2>
+								<a href="/topcal21/"><img src="/images/topcal21.jpg"  width="350" alt="TopCal21 Cálculos Topográficos" /></a>
+								
+								<p>Resuelve todos los problemas de cálculo generados en trabajos topográficos.</p>
+							</div>
+                           
+						</section>
+        </div>
+          
+    </body>
+</html>

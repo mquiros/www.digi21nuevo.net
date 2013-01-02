@@ -1,0 +1,37 @@
+﻿@{
+    
+}
+
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>@Page.Title</title>
+        <meta name="keywords" content="@Page.keywords" />
+        <meta name="description" content="@Page.description" />
+        <link href="@Href("~/Content/StyleSheet.css")" rel="stylesheet" type="text/css" />
+        <script type="text/javascript"  src="/js/stm31.js"></script>
+        @RenderPage("~/Shared/_facebook.cshtml")
+    </head>
+    <body>
+        <div id="header">
+            <div id="icono"><img src="/images/compass.png"  width="150" height="100" alt="Icono Digi21"/></div>
+            <div id="head">@Page.head</div>
+            <div id="InformacionContacto">
+                @RenderPage("~/Shared/_infoContacto.cshtml")
+            </div>
+        </div>
+
+        <div id="navstrip"><script type="text/javascript"  src="/js/menuhorizontal.js" charset="UTF-8"></script> </div>
+
+        <div id="wrapper">
+            
+            @RenderBody()
+
+            <div id="footer">
+                <p>&copy; www.digi21.net | Diseño: <a href="http://www.digi21.net/">digi21.net</a>| @DateTime.Now.Day/@DateTime.Now.Month/@DateTime.Now.Year </p> 
+            </div>
+        </div>
+    </body>
+</html>

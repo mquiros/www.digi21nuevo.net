@@ -1,0 +1,569 @@
+﻿@{
+    Layout= "~/Shared/_Layout.cshtml";
+    Page.Title = "Bienvenido a MDTopX";
+    Page.head = "MDTopX";
+    Page.keywords = "Modelos digitales del terreno MDT MDS LiDAR Láser-Scan ";
+    Page.description="Digi21.net presenta la nueva versión de MDTop: MDTopX";
+}
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+   
+        @RenderPage("~/Shared/_Desplegables.cshtml")  
+    </head>
+    <body>
+        <div id="contentIz">
+             <div class="post">
+                            
+                            <p class="subtitle">Modelos Digitales del Terreno</p>
+                            <p>Digi21.net presenta la nueva versión de MDTop: MDTopX.</p>
+                            <div class="image-style">
+                                <img src="pantalla_mdtopx_00.png" alt="Pantalla de bienvenida de MDTopX" />
+                            </div>
+                           </br>
+                           
+                            <p>
+                                Esta versión del programa de tratamiento de Modelos Digitales del Terreno, dispone
+                                de una nueva interfaz de usuario que facilitará la ejecución de comandos y herramientas.</p>
+                            <p>
+                                Mejora ostensiblemente la velocidad de visualización de los datos, aumentando la
+                                capacidad para el tratamiento de grandes volúmenes de datos.
+                            </p>
+                            <p>
+                                Además, se ha integrado en la misma interfaz el programa VirtuaLand, lo que permitirá
+                                disponer de todas las herramientas en el mismo entorno.</p>
+                        </div>
+                        <div class="post">
+                            <p class="subtitle">
+                                LiDAR y Láser-Scan por intensidad</p>
+                            <div class="image-style">
+                                <img src="pantalla_mdtopx_01.jpg" alt="Puntos LIDAR por intensidad" />
+                            </div>
+                            <p>
+                                Otra de las importantes mejoras que contiene esta nueva versión es la inclusión
+                                de un módulo para el tratamiento de ficheros procedentes de dispositivos láser de
+                                recogida de información: LiDAR y Láser-Scan.
+                            </p>
+                            <p>
+                                Este módulo incluye nuevas herramientas para el tratamiento y edición de estos datos
+                                de una manera rápida y sencilla.</p>
+                        </div>
+                        <div class="post">
+                            <p class="subtitle">
+                                LiDAR y Láser-Scan por clasificación</p>
+                            <div>
+                                <iframe width="570" height="344" src="http://www.youtube.com/embed/qm8dz4AmSRQ?rel=0"
+                                    frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <p>
+                                Las herramientas de tratamiento de datos láser permitirán la clasificación de datos
+                                LiDAR de manera automática.</p>
+                            <p>
+                                Se utilizan filtros de clasificación que buscarán puntos en función de la geometría,
+                                utilizando parámetros adicionales como la intensidad o el color extraído de las
+                                imágenes aéreas.
+                            </p>
+                            <p>
+                                En este módulo, se dispone de nuevas herramientas de triangulación y tetraedrización
+                                de Delaunay, que permitirán, de una forma rápida, la generación de modelos digitales
+                                a partir de datos láser.</p>
+                            <p>
+                                Se incluyen, igualmente, herramientas de edición manual, por medio de perfiles o
+                                por superficies que ayudarán al usuario a la reclasificación de los datos.</p>
+                        </div>
+                        <div class="post">
+                            <p class="subtitle">
+                                Modelo Digital de Superficies
+                            </p>
+                            <div>
+                                <img src="pantalla_mdtopx_03.jpg" alt="Modelo Digital de Superficies" />
+                            </div>
+                            <p>
+                                En MDTopX se incorporan nuevos comandos para la visualización de modelos digitales,
+                                pudiendo elegirse celdas, puntos, tintas hipsométricas o sombreado para el análisis
+                                de éstos. La visualización puede ser mejorada editando parámetros de iluminación
+                                y de material.</p>
+                        </div>
+                        <div class="post">
+                            <p class="subtitle">
+                                Visualización raster a gran velocidad</p>
+                            <div>
+                                <img src="pantalla_mdtopx_04.jpg" alt="Ortofotografía" />
+                            </div>
+                            <p>
+                                Permite la visualización de imágenes raster con gran velocidad, incluyendo herramientas
+                                para georreferenciar imágenes.</p>
+                        </div>
+                        <div class="post">
+                            <p class="subtitle">Cálculo de mosaicos de ortofotografías</p>
+                            <div>
+                                <iframe width="570" height="344" src="http://www.youtube.com/embed/C7dZw7GFOVQ?rel=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="Navegar">
+                            <a href="http://blogmdtop.digi21.net/?p=5">Las líneas unión entre dos ortofotografías son aquellas zonas donde sería posible realizar la unión sobre una sola imagen sin que se notara el cambio. Por tanto, estas líneas transcurrirán por aquellas zonas donde ambas imágenes son similares ...</a>
+                            </div>    
+                        </div>
+                        <div class="post">
+                            <p class="subtitle">
+                                Mejorar la visualización de modelos digitales</p>
+                            <div>
+                                <img src="pantalla_mdtopx_05.jpg" alt="Modelo Digital de Superficies con texturas" />
+                            </div>
+                            <p>
+                                Las imágenes generadas por el programa o registradas por dispositivos externos pueden
+                                ser utilizadas para mejorar la visualización y el análisis de modelos digitales.</p>
+                            <p>
+                                Entre las herramientas nuevas de visualización se incluye una para generación de
+                                videos, utilizando trazados y parámetros de vuelo.
+                            </p>
+                        </div>
+                        <div class="post">
+                            <div>
+                                <img src="pantalla_mdtopx_06.jpg" alt="Modelo Digital de Superficies con texturas" />
+                            </div>
+                        </div>
+                        <div class="post">
+                            <p class="subtitle">
+                                Características técnicas</p>
+                            <p>
+                                Como en versiones anteriores, MDTopX es un programa de generación automática de
+                                modelos digitales del terreno con diversas aplicaciones para su explotación.
+                            </p>
+                            <p>
+                                Además, dispone de herramientas para el <b>trazado de viales</b> y la generación
+                                de diversos cálculos como perfiles longitudinales, transversales, cubicaciones,
+                                etc.
+                            </p>
+                            <p>
+                                Genera modelos digitales sin límite de puntos dato utilizando el algoritmo de Delaunay
+                                para su composición. Permite respetar líneas de ruptura de manera rápida y eficaz.
+                            </p>
+                            <p>
+                                Los archivos de enLos archivos de entrada y de salida de datos pueden ser archivos
+                                de DIGI (BIN), de AutoCad (DXF), de MicroStation (DGN), SHP de ESRI, de TopCal o
+                                archivos ASCII.
+                            </p>
+                            <br />
+                            <p>
+                                Entre las aplicaciones de <strong>explotación de los modelos digitales</strong>
+                                están las siguientes:</p>
+                            <div class="parrafo1">
+                                <p>
+                                    Generación automática de curvas de nivel, pudiendo elegir equidistancias, rotulación
+                                    de curvas y delimitaciones de zonas a curvar
+                                </p>
+                                <p>
+                                    Cálculo de cubicaciones, con salida de resultados de las superficies y volúmenes
+                                    de desmonte y terraplén
+                                </p>
+                                <p>
+                                    Cálculo de perfiles, longitudinales y transversales, pudiendo definir taludes laterales
+                                    y peraltes; permite además calcular la cubicación de la traza y obtener resultados
+                                    de los perfiles en formato TopCal</p>
+                                <p>
+                                    Proyección de cartografía sobre el modelo digital, para calcular su cota sobre el
+                                    terreno, o poder comparar entre la cota almacenada en el fichero y la calculada
+                                    sobre el modelo digital</p>
+                                <p>
+                                    Comprobación de la altimetría de un modelo digital, útil para modelos estereoscópicos
+                                    de fotogrametría, pudiendo encontrar posibles errores en curvas de nivel o puntos
+                                    acotados</p>
+                                <p>
+                                    Generación de modelos basados en rejilla regular</p>
+                                <p>
+                                    Generación de mapas de tintas hipsométricas</p>
+                                <p>
+                                    Generación de sombreados del terreno</p>
+                            </div>
+                            <br />
+                            <p>
+                                Entre las aplicaciones para el <strong>trazado de viales</strong> están las siguientes:</p>
+                            <div class="parrafo1">
+                                <p>
+                                    Edición interactiva en pantalla o teclado de los trazados y alzados</p>
+                                <p>Herramientas para el cálculo de elementos circulares, clotoides y parábolas</p>
+                    <p>Herramientas para la edición de los trazados y alzados, como copiar, mover, intersecar,etc.</p>
+                    <p>Herramientas para el cálculo de glorietas</p>
+                    <p>Importadores y exportadores a otros formatos de archivos</p>
+                    <p>Herramienta para la edición de secciones tipo</p>
+                    <p>Herramienta para la edición de peraltes</p>
+                    <p>Cálculo del modelo digital con los viales proyectados</p>
+                    <p>Generación de perfiles longitudinales y transversales</p>
+                    <p>Cálculo de cubicaciones</p>
+                            </div>
+                            <div class="5grid-layout">
+                                &nbsp;</div>
+                            <div class="image-style">
+                                <img src="Pantalla2.jpg" alt="Viales" />
+                            </div>
+                        </div>
+
+        </div>
+
+        <div id="contentDz">
+                        <div class="post">
+                            <p class="subtitle">Descargas</p>
+                        </div>
+                        <section>
+					       <a href="http://download.digi21.net/MDTopX.msi" class="button">Descargar MDTopX versión completa</a>
+                           
+                            <a href="http://download.digi21.net/MDTopX_Demo.msi" class="button">Descargar MDTopX versión evaluación</a>
+                           <p>Versión gratuita de evaluación. Esta versión tiene todas las herramientas y puede
+                                funcionar como un perfecto visor de archivos. Sin embargo, no es posible salvar los resultados a disco.</p>
+							
+                            <div class="5grid-layout">&nbsp;</div>
+
+	    				</section>
+                        <section>
+					       <a href="http://download.digi21.net/Ejemplos de MDTop.msi" class="button">Descargar archivos de ejemplos MDTop</a>
+                                                    
+                           <p>Incluye archivos con los datos necesarios para evaluar todas las características de MDTopX.</p>
+							
+                            <div class="5grid-layout">&nbsp;</div>
+
+	    				</section>
+                        <section>
+					       <a href="http://download.digi21.net/EjemploLIDAR.rar" class="button">Descargar archivos de ejemplos LIDAR</a>
+                                                    
+                           <p>Incluye archivos de ejemplo con datos LIDAR.</p>
+							
+                            <div class="5grid-layout">&nbsp;</div>
+
+	    				</section>
+                        <section>
+					       <a href="http://download.digi21.net/Manual de MDTop.pdf" class="button">Descargar manual MDTopX en pdf > ></a>
+                                                    
+                           <p>Archivo PDF preparado para obtener un manual impreso de la ayuda de MDTopX.</p>
+							
+                            <div class="5grid-layout">&nbsp;</div>
+
+	    				</section>
+                        <section>
+					       <a href="http://download.digi21.net/Presentacion%20MDTop.zip" class="button">Presentación PowerPoint de MDTopX</a>
+                                                    
+                           <p>Archivo HTML con una presentación de las principales características de MDTopX, con imágenes y videos.</p>
+							
+                            <div class="5grid-layout">&nbsp;</div>
+
+	    				</section>
+                        <br />
+                        <br />
+                        <p>
+                            <strong>Versiones antiguas:</strong></p>
+                        <p>
+                            <a href="http://download.digi21.net/MDTop_2007.msi">Descargue <b>MDTop</b> versión 2007 ...</a>
+                        </p>
+                        <p>
+                            <a href="http://download.digi21.net/Mdtop4.msi">Descargue <b>MDTop</b> versión 4 ...</a></p>
+                        <br />
+                        <br />
+                        <section>
+
+            <div id="post" data-collapse="accordion">
+                            
+                     <h3>Histórico de MDTop</h3>
+                
+                  <div>         
+                            <p id="fecha">15 de junio de 2010 </p>
+                
+                    <p><strong>Nueva versión MDTopX</strong>. Requiere actualización desde la versión 2007.</p>
+                
+                <p id="fecha">
+                    14 de abril de 2009
+                </p>
+                
+                    <p>Nueva herramienta para introducir puntos en zonas planas generadas por la triangulación
+                        de curvas de nivel.</p>
+              
+                <p id="fecha">
+                    29 de junio de 2008
+                </p>
+               
+                    <p>Nuevo importador de archivos INGR de Intergraph.</p>
+                    <p>Nueva herramienta para transformar las coordenadas de archivos de dibujo y MDT utilizando
+                        una rejilla NTV2.</p>
+                    <p>Mejoras en el curvado. </p>
+               
+                <p id="fecha">
+                    21 de enero de 2008
+                </p>
+               
+                    <p>Nueva herramienta para cortar por hojas.</p>
+                
+                <p id="fecha">
+                    15 de noviembre de 2007
+                </p>
+                
+                    <p>Nuevos exportadores a STLA y STLB, formatos de archivos útiles para aplicaciones
+                        de modelado tridimensional.</p>
+                    <p>Nuevo importador de puntos del láser Leica HDS</p>
+                    <p>Nuevo importador de puntos almacenados en archivos LAS de dispositivos LIDAR</p>
+                    <p>Mejoras en el cálculo de cubicaciones</p>
+                    <p>Posibilidad de indicar origen global de coordenadas a los datos importados</p>
+                
+                <p id="fecha">
+                    9 de julio de 2007
+                </p>
+                
+                    <p>Nuevas opciones al unir modelos digitales del terreno.</p>
+               
+                <p id="fecha">
+                    9 de abril de 2007
+                </p>
+                
+                    <p>Posibilidad de salvar y leer documentos raster en formato JPEG.</p>
+                
+                <p id="fecha">
+                    15 de marzo de 2007
+                </p>
+                
+                    <p>Nuevas opciones cuando se proyectan los viales sobre el MDT.</p>
+                    <p>Posibilidad de generar un documento con la planta de los perfiles proyectados sobre
+                        una cubicación.</p>
+               
+                <p id="fecha">
+                    12 de marzo de 2007
+                </p>
+               
+                    <p>Posibilidad de generar textos con los pks de los perfiles transversales en la planta
+                        cuando se proyectan perfiles.</p>
+               
+                <p id="fecha">
+                    7 de febrero de 2007
+                </p>
+               
+                    <p>Posibilidad de cortar las curvas de nivel en el texto de rotulación.</p>
+               
+                <p id="fecha">
+                    8 de enero de 2007
+                </p>
+               
+                    <p>Posibilidad de cambiar el número de opciones de deshacer.</p>
+                    <p>Posibilidad de seleccionar el color de fondo de las vistas de documentos.</p>
+                    <p>Posibilidad de generar automáticamente los perfiles cuando se está calculando una
+                        cubicación. Con estos perfiles se puede obtener un valor de la cubicación utilizando
+                        el método de áreas</p>
+                
+                <p id="fecha">
+                    25 de diciembre de 2006
+                </p>
+               
+                    <p>Nuevas opciones y mejoras en la herramienta Plataformas.</p>
+                    <p>Nueva herramienta para cambiar masivamente de código a las entidades de dibujo o
+                        a las líneas de ruptura del modelo digital</p>
+                    <p>Nueva herramienta para unir entidades de dibujo automáticamente</p>
+                    <p>Nueva herramienta para generalizar entidades de dibujo</p>
+                    <p>Posibilidad de borrar masivamente líneas de ruptura del modelo digital</p>
+                
+                <p id="fecha">
+                    20 de diciembre de 2006
+                </p>
+                
+                    <p><b>Nueva versión 2007</b>. Requiere actualización desde la versión 1.</p>
+                    <p>Posibilidad de salvar los archivos a formato DGN de MicroStation.</p>
+                    <p>Posibilidad de cambiar la georreferenciación de las imágenes gráficamente.</p>
+                
+                <p id="fecha">
+                    6 de septiembre de 2006
+                </p>
+               
+                    <p>Posibilidad de rotar ficheros por medio de teclas</p>
+                    <p>Nuevo importador de modelos digitales de ArcView</p>
+                
+                <p id="fecha">
+                    28 de julio de 2006
+                </p>
+                
+                    <p>Mejoras en la herramienta Cubicación</p>
+                    <p>Nuevas opciones en la herramienta Curvado para curvar en un rango específico de
+                        alturas</p>
+                
+                <p id="fecha">
+                    9 de marzo de 2006
+                </p>
+                
+                    <p>Posibilidad de insertar un marco de hoja a un documento de dibujo</p>
+               
+                <p id="fecha">
+                    5 de julio de 2005
+                </p>
+                
+                    <p>Posibilidad de leer la rueda del ratón para realizar zoom</p>
+                    <p>Posibilidad de introducir las líneas de ruptura interactivamente en el MDT</p>
+                    <p>Posibilidad de leer archivos Shape de Arc-gis</p>
+                    <p>Posibilidad de leer entidades 3DFACE de DXF</p>
+                    <p>Nuevas opciones al agregar modelos digitales</p>
+                    <p>Posibilidad de borrar la información de líneas de ruptura de un MDT</p>
+                    <p>Corregido problema en el superficiado de los perfiles</p>
+                    <p>Posibilidad de respetar los limites interiores en las cubicaciones</p>
+                    <p>Corregido problema en la generalización de curvas de nivel cerradas</p>
+                    <p>Nuevas opciones al leer bloques de AutoCad</p>
+                    <p>Nuevo tipo de exportación de MDT a ArcView</p>
+                    <p>Posibilidad de aplicar factores de suavizado en el modo B-Splines de los curvados</p>
+                    <p>Posibilidad de exportar las líneas de ruptura al formato hibrido DEM de VirtuaLand</p>
+               
+                <p id="fecha">
+                    3 de mayo de 2005
+                </p>
+               
+                    <p>Posibilidad de leer entidades tipo SPLINE de archivos DXF</p>
+                    <p>Posibilidad de no suavizar o generalizar las curvas de nivel cuando cortan con líneas
+                        de ruptura</p>
+                    <p>Nueva herramienta para la generación de plataformas</p>
+                
+                <p id="fecha">
+                    4 de febrero de 2005
+                </p>
+                
+                    <p>Corregidos errores en la visualización de imágenes georreferenciadas</p>
+                    <p>Corregidos errores al borrar utilizando límites almacenados en archivos de dibujo</p>
+               
+                <p id="fecha">
+                    30 de octubre de 2004
+                </p>
+                
+                    <p>Corregido error al leer la altitud de curva registradas como LWPOLYLINE en los archivos
+                        DXF</p>
+                    <p>Posibilidad de leer bloques almacenados en archivos DXF</p>
+                    <p>Nuevas herramientas para deshacer/rehacer en los diferentes tipos de documentos</p>
+                    <p>Mejoras en la triangulación de curvas de nivel, al insertar puntos nuevos en las
+                        zonas cóncavas</p>
+                    <p>Nueva opción al cubicar para poder establecer la tolerancia en la proyección de
+                        los puntos de un MDT sobre el otro</p>
+               
+                <p id="fecha">
+                    11 de octubre de 2004
+                </p>
+                
+                    <p>Nuevo modo de suavizado de curvas de nivel mediante B-splines</p>
+                    <p>Corregido problema al dibujar perfiles transversales</p>
+                    <p>Mejoras en el curvado</p>
+                    <p>Mejoras en la triangulación</p>
+               
+                <p id="fecha">
+                    5 de octubre de 2004
+                </p>
+               
+                    <p>Corregido problema al dibujar perfiles</p>
+                    <p>Corregido problema al salvar MDT en formato VirtuaLand</p>
+               
+                <p id="fecha">
+                    23 de septiembre de 2004
+                </p>
+                
+                    <p>Mejoras al insertar y borrar puntos de la triangulación</p>
+                
+                <p id="fecha">
+                    7 de septiembre de 2004
+                </p>
+                
+                    <p>Nuevos controles internos para la consistencia de la triangulación</p>
+                    <p>Posibilidad de ver las curvas de nivel del MDT también con diferente punto de vista</p>
+                    <p>Mejoras el la inclusión de cubiertas de edificios sobre el MDT</p>
+                
+                <p id="fecha">
+                    28 de julio de 2004
+                </p>
+                
+                    <p>Corregido problema al quitar líneas de ruptura a los triángulos desde el cuadro
+                        de dialogo de información</p>
+                    <p>Nueva herramienta para incorporar entidades nuevas a la triangulación</p>
+                    <p>Nueva herramienta para borrar ajustándose a límites almacenados en archivos</p>
+                    <p>Nueva herramienta para comprimir (eliminar entidades borradas) archivos MDT y de
+                        dibujo</p>
+                    <p>Nueva herramienta interactiva de variación del punto de vista</p>
+                    <p>Nueva herramienta para la inclusión de cubiertas de edificios sobre el MDT, útil
+                        para calcular true-ortho</p>
+               
+                <p id="fecha">
+                    15 de junio de 2004
+                </p>
+                
+                    <p>Corregido problema al proyectar entidades fuera de los límites de la triangulación</p>
+                    <p>Corregido problema de unidades en el cuadro de diálogo de información de entidad</p>
+               
+                <p id="fecha">
+                    4 de junio de 2004
+                </p>
+                
+                    <p>Corregido pequeño problema de impresión cuando no se tenía instalada impresora</p>
+                    <p>Incorporada lectura de entidades LWPOLYLINE en ficheros DXF</p>
+               
+                <p id="fecha">
+                    13 de mayo de 2004
+                </p>
+                
+                    <p>Solucionado problema al borrar códigos desde el cuadro de dialogo de información
+                        de archivo de dibujo</p>
+                    <p>Solucionado problema al borrar puntos de la triangulación</p>
+                    <p>Solucionado problema al insertar muchos puntos nuevos en el momento de la triangulación
+                        y pasarlos a triángulos</p>
+                    <p>Nueva herramienta para borrar puntos en función de un rango de altitudes</p>
+                    <p>En la herramienta perfiles, se coloca siempre un punto en la guitarra al final de
+                        cada perfil</p>
+                    <p>Mejorada la herramienta de proyectar elementos lineales</p>
+                    <p>Corregido error en la guitarra de los perfiles</p>
+                    <p>Arreglado problema al cambiar el código de la llave de protección</p>
+                    <p>Arreglado problema al curvar con el suavizado 3</p>
+                    <p>Arreglado problema al borrar lados de la triangulación</p>
+                
+                <p id="fecha">
+                    11 de mayo de 2004
+                </p>
+               
+                    <p>Mejorada la herramienta de impresión de archivos</p>
+                
+                <p id="fecha">
+                    21 de abril de 2004
+                </p>
+               
+                    <p>Mejorado el corte con límites en el curvado</p>
+                    <p>Mejorado visualización de raster</p>
+                    <p>Resuelto problema en la velocidad al proyectar puntos sobre el MDT</p>
+                    <p>Nueva herramienta mejorada para la impresión de archivos</p>
+                    <p>Nueva herramienta para exportar a archivos ASCII para la estación LH Socet Set</p>
+                
+                <p id="fecha">
+                    23 de marzo de 2004
+                </p>
+               
+                    <p>Solucionado problema en el origen de coordenadas de la herramienta Rejilla</p>
+                    <p>Mejorada presentación de la guitarra de los perfiles transversales</p>
+               
+                <p id="fecha">
+                    10 de marzo de 2004
+                </p>
+                
+                    <p>Posibilidad al curvar de no comprobar cortes entre curvas, para aumentar la velocidad</p>
+                    <p>Mejorada la función de comprobar MDT</p>
+                    <p>Arreglado problema con la visualización de los menús en Windows NT y 98</p>
+                
+                <p id="fecha">
+                    01 de diciembre de 2003
+                </p>
+                
+                    <p>No lee el carácter # en los archivos ASCII</p>
+                    <p>Posibilidad de generar un MDT nuevo a partir de unas máximas y mínimas</p>
+                    <p>Posibilidad de agregar o cargar de referencia archivos de TopCal</p>
+                    <p>Nueva herramienta de curvado en tiempo real</p>
+                    <p>Nueva herramienta de detección de líneas de ruptura</p>
+                    <p>Nueva función de inclusión de dibujos y más efectiva la inclusión de puntos</p>
+                    <p>Nueva función de curvado mas efectiva con curvas de nivel originales</p>
+               
+                <p id="fecha">
+                    27 de noviembre de 2003
+                </p>
+                
+                    <p>Añadido traductor para archivos SRTM de USGS</p>
+                    <p>Arreglado fallo en el cálculo de puntos en el cuadro de dialogo de importación de GTOPO30</p>
+                    <p>Ahora considera el valor de NODATA al importar archivos GTOPO30</p>
+                </div> 
+
+                </div>    
+                    </section>
+        </div>
+         
+    </body>
+</html>

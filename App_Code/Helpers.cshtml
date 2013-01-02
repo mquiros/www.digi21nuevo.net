@@ -1,0 +1,46 @@
+﻿@helper RegisterJs(string folder, string[] scriptLibs)
+{
+   foreach (var script in scriptLibs)
+   {
+       <script src="@folder/@script" type="text/javascript"></script>
+   }
+}
+
+@helper RegisterStyles(string folder, string[] styleSheets)
+{
+   foreach(var sheet in styleSheets){
+       <link href="@folder/@sheet" rel="stylesheet" type="text/css"/>
+   }
+}
+
+/* recibe dos strins el primero es el nombre del botón de opcion el segundo es el valor de la opción
+Primero comprueba si el botón de opción con ese nombre existe
+Busca si hay ás de una opción separadas por comas
+Después comprueba si el array contiene alguno que case con el valor recibido en value
+Si el valor es encontado devuelve selected="selected" entre etiquetas de text */
+
+@helper Selected(string option, string value)
+{
+   if(HttpContext.Current.Request[option] != null)
+   {
+       var values = HttpContext.Current.Request[option].Split(',');
+       if(values.Contains(value))
+       {
+           <text>selcted=\"selected\"</text>
+       }
+   }
+}
+
+/* Sirve para lo mismo que el anterior pero con los checkox*/
+
+@helper Checked(string option, string value)
+{
+   if(HttpContext.Current.Request[option] != null)
+   {
+       var values = HttpContext.Current.Request[option].Split(',');
+       if(values.Contains(value))
+       {
+           <text>checked=\"checked\"</text>
+       }
+   }
+}

@@ -1,0 +1,419 @@
+﻿@{
+  Layout= "~/Shared/_Layout.cshtml";
+    Page.Title = "Bienvenido a Digi3D.NET";
+    Page.head = "novedades Ficheros";
+    Page.keywords = "GIS SIG Fotogrametría Topografía Cartografía Ortofoto DTM MDT Aerotriangulación";
+    Page.description="Digi21.net software para GIS SIG topografía cartografía y fotogrametría digital";    
+}
+
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        
+    </head>
+    <body>
+    </br>
+     <div class="Novedad">
+        <a href="http://usandodigi3d.digi21.net/?p=321"> <p class="subtitle">Añadido soporte para trabajar con archivos Geomedia Datawarehouse (.mdb) </p></a>          
+         
+        <div class="ContenidoDerecha">
+            <img   src="http://usandodigi3d.digi21.net/wp-content/uploads/Campos-de-la-base-de-datos.png" />
+            
+
+        </div>  
+                  
+        <div class="ContenidoIzquierda">
+            
+            <p>Ahora es posible trabajar en DigiNG.NET de forma nativa en archivos .mdb en formato Datawarehouse de Geomedia, sin necesidad de importar o exportar archivos.</p>
+            <p>No es necesario tener instalada una licencia de Geomedia para poder trabajar con este tipo de archivos. La implementación es nativa, sin librerías de terceros como Geomedia Objects de modo que el rendimiento es óptimo.</p>
+            <p>Para el usuario es muy sencillo, tan solo tiene que seleccionar en el campo Archivo de dibujo de la pestaña Archivo de dibujo del cuadro de diálogo Nuevo proyecto un archivo con extensión .mdb en formato Datawarehouse de Geomedia.</p> 
+            <p>Si no disponemos de una tabla de códigos, DigiNG.NET añadirá códigos a la tabla de códigos activa en el momento de la carga, pero únicamente en memoria.</p>
+            <p>Si queremos almacenar esa tabla tendremos que hacerlo con la única herramienta disponible para este fin que es el Editor de tablas de códigos que podemos ejecutar en Inicio / Todos los programas / Digi21.net / Digi3D.NET / Digi3D.NET.</p>
+            <p>DigiNG.NET nos permite tanto crear entidades nuevas como eliminar entidades existentes o modificarlas. Además antes de almacenar una entidad nueva podemos indicar en el panel acoplable campos de la base de datos el valor de los campos que se van a almacenar junto con la geometría, y podemos modificar registros existentes en la base de datos con la orden EDITAR_COD.</p>
+             <p><strong>Entidades eliminadas</strong></p>
+            <p>Geomedia no permite indicar si una determinada entidad está eliminada o no.</p>
+            <p>En Geomedia si se elimina una entidad, desaparece todo rastro de ella. La filosofía de trabajo de usuarios Digi, sin embargo si que permite marcar entidades para poder recuperarlas con posterioridad y para poder realizar un número ilimitado de operaciones deshacer.</p> 
+            <p>Para permitir trabajar con filosofía Digi en archivos de Geomedia, DigiNG.NET añadirá dos tablas a la base de datos: Digi3D_Tablas y Digi3D_Eliminados, donde se almacena información sobre las entidades eliminadas.</p>  
+            <p>Si eliminamos entidades y no comprimimos, al abrir el archivo .mdb con Geomedia, éste mostrará las entidades eliminadas. Para eliminar permanentemente las entidades tendremos que ejecutar la orden comprimir.</p>
+        
+        </div>
+  
+    </div>
+
+      <div class="Novedad">
+        <a href="http://usandodigi3d.digi21.net/?p=132"> <p class="subtitle"> Asignando un sistema de coordenadas de referencia a un archivo de dibujo nuevo </p></a>          
+         
+        <div class="ContenidoDerecha">
+            <iframe type="text/html" frameborder="0" scrolling="no" style="overflow:hidden;" src="http://www.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/46e214f4-cff5-4099-b29b-1883749566b3/embed" height="180" width="320" ></iframe>
+
+        </div>  
+                  
+        <div class="ContenidoIzquierda">
+            
+            <p>Digi3D ahora permite indicar los sistemas de coordenadas de referencia horizontales y verticales en el que estarán referidas las coordenadas de las entidades que se almacenen en un archivo de dibujo nuevo.</p>
+            <p>Si creamos un archivo de dibujo nuevo, en función de su extensión el programa nos permitirá indicar los dos sistemas de coordenadas de referencia</p>
+            <p>ciertos formatos de archivo de dibujo no son configurables pues llevan uno asociado de forma implícita, como es el formato .kml de Google Earth</p> 
+            <p>Si seleccionamos un sistema de coordenadas de referencia geográfico, el programa utilizará la proyección Plate Carrée</p>
+            <p> Cada sistema de coordenadas tiene unas unidades asociadas</p>
+            <p> si seleccionamos el sistema de coordenadas proyectado NAD27 / Alaska Albers las unidades de trabajo serán pies americanos</p>
+            <p> y si seleccionamos ETRS89 / UTM Zone 30N las unidades de trabajo serán metros.</p>
+             <img  width="320" height="180" src="http://usandodigi3d.digi21.net/wp-content/uploads/CuadroDialogoSeleccionSCRHorizontal.png" />
+            <p>Si hacemos clic en alguno de los sistemas de coordenadas de referencia memorizados, el programa nos mostrará en la parte inferior del cuadro una cadena Well Known Text que representa el sistema de coordenadas de referencia seleccionado.</p>
+            <p>Si dispones de archivos ESRI Shapefile con un archivo .prj asociado, siempre puedes importarlo pulsando el botón Importar o abrirlo con un bloc que notas, copiar su contenido y pegarlo en esta ventana, pues los archivos .prj no son más que cadenas Well Known Text que definen proyecciones.</p>
+                
+        </div>
+  
+    </div>
+
+    <div class="Novedad">
+        <a href="http://usandodigi3d.digi21.net/?p=145"> <p class="subtitle"> Sistema de coordenadas de la ventana de dibujo </p></a>          
+         
+        <div class="ContenidoDerecha">
+             <iframe type="text/html" frameborder="0" scrolling="no" style="overflow:hidden;" src="http://www.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/3d682662-9daa-4223-8031-e477d4f6503c/embed" height="180" width="320" ></iframe>          
+           
+
+        </div>  
+                  
+        <div class="ContenidoIzquierda">
+            
+            <p>DigiNG.NET permite que indiquemos la proyección en la que se mostrarán los vectores en la ventana de dibujo.</p>
+            <p>Disponemos del campo Sistema de coordenadas horizontal de la ventana de dibujo, en el cuadro de diálogo Nuevo Proyecto, en la pestaña Archivo de Dibujo.</p>
+            <p>Podemos seleccionar tanto sistemas de coordenadas proyectados como geográficos.</p> 
+            <p>Si seleccionamos un sistema de coordenadas de referencia geográfico, el programa utilizará la proyección Plate Carrée</p>
+            <p> Cada sistema de coordenadas tiene unas unidades asociadas</p>
+            <p> si seleccionamos el sistema de coordenadas proyectado NAD27 / Alaska Albers las unidades de trabajo serán pies americanos</p>
+            <p> y si seleccionamos ETRS89 / UTM Zone 30N las unidades de trabajo serán metros.</p>
+               
+        </div>
+  
+    </div>
+
+<div class="Novedad">
+                   
+                    <div class="ContenidoDerecha">
+                        <!-- copy and paste. Modify height and width if desired. -->
+                      <object id="Object16" width="320" height="180" type="application/x-shockwave-flash"
+                            data="http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/931aa4a9-9fda-45ac-9474-f6f461206afd/scplayer.swf">
+                            <param name="movie" value="http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/931aa4a9-9fda-45ac-9474-f6f461206afd/scplayer.swf" />
+                            <param name="quality" value="high" />
+                            <param name="bgcolor" value="#FFFFFF" />
+                            <param name="flashVars" value="thumb=http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/931aa4a9-9fda-45ac-9474-f6f461206afd/FirstFrame.png&containerwidth=1280&containerheight=720&autohide=true&autostart=false&loop=false&showendscreen=true&showsearch=false&showstartscreen=true&tocdoc=left&xmp=sc.xmp&content=http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/931aa4a9-9fda-45ac-9474-f6f461206afd/Carga%20de%20archivos%20LAS%20en%20la%20ventana%20fotogrametrica.mp4&blurover=false" />
+                            <param name="allowFullScreen" value="true" />
+                            <param name="scale" value="showall" />
+                            <param name="allowScriptAccess" value="always" />
+                            <param name="base" value="http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/931aa4a9-9fda-45ac-9474-f6f461206afd/" />
+                            <iframe type="text/html" frameborder="0" scrolling="no" style="overflow: hidden;"
+                                src="http://www.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/931aa4a9-9fda-45ac-9474-f6f461206afd/embed"
+                                height="180" width="320"></iframe>
+                        </object>  
+
+
+
+                    </div>
+
+                    <a href="http://usandodigi3d.digi21.net/?p=71"> <p class="subtitle"> Visualizando archivos LIDAR (*.las) en la ventana fotogramétrica </p></a>
+                    <div class="ContenidoIzquierda">
+                        <p>Digi3D permite visualizar datos LIDAR en la ventana fotogramétrica sin consumir la memoria del sistema y a mucha velocidad.</p>
+                            <p>En versiones anteriores no era posible cargar archivos .LAS y la única forma de comprobar los datos LIDAR era cargar los archivos .LAS en herramientas como MDTopX, generar una...
+                            </p>      
+                           
+
+                       
+                    </div>
+                </div>
+
+    <div class="Novedad">
+        <a href="http://usandodigi3d.digi21.net/?p=157"> <p class="subtitle"> Valores separados por comas (CSV) </p></a>          
+         
+        <div class="ContenidoDerecha">
+             <iframe type="text/html" frameborder="0" scrolling="no" style="overflow:hidden;" src="http://www.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/3a8c9de3-75b6-4d3c-89e5-5cda676959d9/embed" height="180" width="320" ></iframe>
+
+        </div>  
+                  
+        <div class="ContenidoIzquierda">
+            
+            <p>Los archivos de valores separados por comas se caracterizan por ser archivos de texto (pueden ser ASCII, UTF-8, UTF-16, UNICODE).</p>
+            <p>que tienen valores separados por algún carácter especial, que no tiene por que ser una coma.</p>
+            <p>El importador de archivos CSV nos va a permitir visualizar rápidamente el contenido de estos archivos mostrando el campo que desee el usuario</p> 
+            <p>en unas coordenadas que se extraen del propio archivo</p>
+            <p> lo que significa que estos archivos al menos deben de tener un campo para extraer la coordenada X y otro para la coordenada Y.</p>
+            <p>La coordenada Z tiene menos importancia si lo que estamos visualizando es toponimia.</p>
+            <p>En el video de a continuación podrás ver cómo crear un archivo CSV</p>
+            <p>cargarlo en Digi3D 2011 y a continuación cómo descargar un archivo del sitio Geonames con información acerca de todas las poblaciones de España</p>
+            <p>De este sitio podemos descargar también otro archivo con todos los códigos postales de España o de cualquier país del mundo.</p>
+                 
+        </div>
+  
+    </div>
+
+
+      <div class="Novedad">
+                   
+                    <div class="ContenidoDerecha">
+                        <!-- copy and paste. Modify height and width if desired. -->
+                    <img  width="320" height="180" src="http://usandodigi3d.digi21.net/wp-content/uploads/Digi3D-cargando-un-modelo-de-Pleyades-e1352894450289.jpg" />
+
+                   </div>
+
+                    <a href="http://usandodigi3d.digi21.net/?p=311"> <p class="subtitle"> Añadido soporte para el satélite Pléiades </p></a>
+                    <div class="ContenidoIzquierda">
+                     <p>Digi3D.NET incorpora la posibilidad de cargar imágenes estereoscópicas o monoscópicas del satélite Pléiades.</p> 
+                      <p>Las imágenes procedentes de este satélite son imágenes en formato JPEG 2000 de 12 bits de profundidad de color que Digi3D.NET carga a toda velocidad.</p>
+                      <p>El usuario puede indicar la proyección en la que desea trabajar, encargándose Digi3D.NET de realizar las correspondientes transformaciones en tiempo real.</p>     
+
+                       
+                    </div>
+                </div>
+
+ <div class="Novedad">
+        <a href="http://usandodigi3d.digi21.net/?p=181"> <p class="subtitle"> Cargando ortofotos en DigiNG.NET </p></a>          
+         
+        <div class="ContenidoDerecha">
+                       
+            <img  width="320" height="180" src="http://usandodigi3d.digi21.net/wp-content/uploads/DescargarOrtofoto.png" />
+
+        </div>  
+                  
+        <div class="ContenidoIzquierda">
+           
+            <p>DigiNG.NET considera a las ortofotos como un tipo más de archivos de referencia, de modo que podemos cargar una ortofoto mediante la orden CARGA_F </p>
+            <p><b>Formatos de imagen reconocidos por DigiNG.NET:</b></p>
+            
+               <p> Imágenes en formato TIFF	.tif</p>
+              <p>  Imágenes en formato ECW	.ecw</p>
+               <p> Imágenes en formato JPEG 2000	.jp2</p>
+               <p> Imágenes en formato MrSID	.sid</p>
+               <p> Imágenes en formato JPEG	.jpg</p>
+               <p> Imágenes en formato BMP	.bmp</p>
+
+            <p><b>Geo-referenciación</b></p> 
+            <p>La ortofoto tiene que estar geo-referenciada, lo que significa que en algún sitio tiene que aparecer información que le haga saber al programa la posición de la imagen así como su orientación y tamaño.</p>
+            <p>Algunos formatos de imagen permiten almacenar la geo-referenciación de la imagen dentro del propio archivo, como un metadato.</p>
+            <p>Si la imagen no tiene almacenada internamente información de geo-referenciación (bien porque el formato no lo permite -como por ejemplo .bmp- o porque sencillamente no tiene esa información) se intentará localizar un archivo World File....</p>       
+        </div>
+  
+    </div>
+
+     
+
+
+    <div class="Novedad">
+                   
+                    <div class="ContenidoDerecha">
+                        <!-- copy and paste. Modify height and width if desired. -->
+                         <object id="Object4" width="320" height="180" type="application/x-shockwave-flash"
+                        data="http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/edac246b-9aa6-4dcd-9e30-4901c98299cb/scplayer.swf">
+                        <param name="movie" value="http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/edac246b-9aa6-4dcd-9e30-4901c98299cb/scplayer.swf" />
+                        <param name="quality" value="high" />
+                        <param name="bgcolor" value="#FFFFFF" />
+                        <param name="flashVars" value="thumb=http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/edac246b-9aa6-4dcd-9e30-4901c98299cb/FirstFrame.png&containerwidth=1280&containerheight=720&autohide=true&autostart=false&loop=false&showendscreen=true&showsearch=false&showstartscreen=true&tocdoc=left&xmp=sc.xmp&content=http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/edac246b-9aa6-4dcd-9e30-4901c98299cb/Panel%20archivos%20de%20dibujo.mp4&blurover=false" />
+                        <param name="allowFullScreen" value="true" />
+                        <param name="scale" value="showall" />
+                        <param name="allowScriptAccess" value="always" />
+                        <param name="base" value="http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/edac246b-9aa6-4dcd-9e30-4901c98299cb/" />
+                        <iframe type="text/html" frameborder="0" scrolling="no" style="overflow: hidden;"
+                            src="http://www.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/edac246b-9aa6-4dcd-9e30-4901c98299cb/embed"
+                            height="180" width="320"></iframe>
+                    </object> 
+
+
+
+                    </div>
+
+                    <a href="http://usandodigi3d.digi21.net/?p=39"> <p class="subtitle"> Panel archivos de dibujo </p></a>
+                    <div class="ContenidoIzquierda">
+                            
+                       <p> Digi3D incorpora un panel acoplable denominado Archivos de dibujo que nos va a permitir cargar archivos de referencia, descargarlos, cambiar el archivo de dibujo activo, hacer zooms a la extensión de un determinado archivo, zoom a la primera y última entidad de un determinado archivo de dibujo e incluso controlar los...
+                            </p>    
+
+                       
+                    </div>
+                </div>
+
+    
+
+  <div class="Novedad">
+                   
+                    <div class="ContenidoDerecha">
+                        <!-- copy and paste. Modify height and width if desired. -->
+                              <object id="Object7" width="320" height="180" type="application/x-shockwave-flash"
+                            data="http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/5b817871-3a41-4a7c-9a05-2cd2cca93af3/scplayer.swf">
+                            <param name="movie" value="http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/5b817871-3a41-4a7c-9a05-2cd2cca93af3/scplayer.swf" />
+                            <param name="quality" value="high" />
+                            <param name="bgcolor" value="#FFFFFF" />
+                            <param name="flashVars" value="thumb=http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/5b817871-3a41-4a7c-9a05-2cd2cca93af3/FirstFrame.png&containerwidth=1280&containerheight=720&autohide=true&autostart=false&loop=false&showendscreen=true&showsearch=false&showstartscreen=true&tocdoc=left&xmp=sc.xmp&content=http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/5b817871-3a41-4a7c-9a05-2cd2cca93af3/Archivos%20de%20referencia%20memorizados.mp4&blurover=false" />
+                            <param name="allowFullScreen" value="true" />
+                            <param name="scale" value="showall" />
+                            <param name="allowScriptAccess" value="always" />
+                            <param name="base" value="http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/5b817871-3a41-4a7c-9a05-2cd2cca93af3/" />
+                            <iframe type="text/html" frameborder="0" scrolling="no" style="overflow: hidden;"
+                                src="http://www.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/5b817871-3a41-4a7c-9a05-2cd2cca93af3/embed"
+                                height="180" width="320"></iframe>
+                        </object>   
+
+
+
+                    </div>
+
+                    <a href="http://usandodigi3d.digi21.net/?p=48"> <p class="subtitle"> Memorizando los archivos de referencia cargados </p></a>
+                    <div class="ContenidoIzquierda">
+                            
+                       <p>
+                                Una característica de los archivos binarios de doble precisión que incorpora Digi3D 2011 es que permiten memorizar los archivos de referencia cargados en la última sesión.
+                            </p>
+
+                            <p>Si nuestro archivo de dibujo es un archivo binario de doble precisión y cargamos archivos de referencia, al cerrar el archivo de dibujo se almacena dentro de este la información necesaria para cargar esos archivos de referencia automáticamente la próxima vez que...
+                            </p>      
+
+                       
+                    </div>
+                </div>
+
+
+
+  <div class="Novedad">
+                   
+                    <div class="ContenidoDerecha">
+                        <!-- copy and paste. Modify height and width if desired. -->
+                       <object id="Object9" width="320" height="180" type="application/x-shockwave-flash"
+                            data="http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/a167895f-2f73-4ca6-a342-d4ac0334fe89/scplayer.swf">
+                            <param name="movie" value="http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/a167895f-2f73-4ca6-a342-d4ac0334fe89/scplayer.swf" />
+                            <param name="quality" value="high" />
+                            <param name="bgcolor" value="#FFFFFF" />
+                            <param name="flashVars" value="thumb=http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/a167895f-2f73-4ca6-a342-d4ac0334fe89/FirstFrame.png&containerwidth=1280&containerheight=720&autohide=true&autostart=false&loop=false&showendscreen=true&showsearch=false&showstartscreen=true&tocdoc=left&xmp=sc.xmp&content=http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/a167895f-2f73-4ca6-a342-d4ac0334fe89/Proyectos%20de%20archivos%20de%20dibujo.mp4&blurover=false" />
+                            <param name="allowFullScreen" value="true" />
+                            <param name="scale" value="showall" />
+                            <param name="allowScriptAccess" value="always" />
+                            <param name="base" value="http://content.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/a167895f-2f73-4ca6-a342-d4ac0334fe89/" />
+                            <iframe type="text/html" frameborder="0" scrolling="no" style="overflow: hidden;"
+                                src="http://www.screencast.com/users/Digi21/folders/Nuevas%20funciones%20Digi3D%202011/media/a167895f-2f73-4ca6-a342-d4ac0334fe89/embed"
+                                height="180" width="320"></iframe>
+                        </object> 
+
+
+
+                    </div>
+
+                    <a href="http://usandodigi3d.digi21.net/?p=53"> <p class="subtitle"> Proyectos de archivos de dibujo </p></a>
+                    <div class="ContenidoIzquierda">
+                       <p>
+                                Digi3D permite almacenar configuraciones de archivos de dibujo (escala de visualización, incremento de registro, tabla de códigos, tabla de menú, archivo de configuración de teclas, …) para evitar que el usuario tenga que rellenar esa información cuando carga un archivo de dibujo.
+                            </p>
+
+                            <p>Esta característica es muy útil para evitar que el usuario se equivoque a la hora de cargar el archivo de dibujo, ya que el administrador habrá almacenado las distintas configuraciones en el ordenador antes de que el usuario se ponga a...
+                            </p>      
+                           
+
+                       
+                    </div>
+                </div>
+
+  <div class="Novedad">
+                   
+                    <div class="ContenidoDerecha">
+                       <img  width="320" height="180" src="http://i3.ytimg.com/vi/jYJIVN3aU2o/mqdefault.jpg" />
+                      
+                   </div>
+                    
+                    <a href="http://www.youtube.com/watch?v=jYJIVN3aU2o"> <p class="subtitle">Web Map Service en Digi3D</p></a>
+                    <div class="ContenidoIzquierda">
+                       <p>En este vídeo vamos a aprender a utilizar el sensor Web Map Service de D..</p>
+                          
+                    
+                    </div>
+      </div>   
+
+<div class="Novedad">
+                   
+                    <div class="ContenidoDerecha">
+                       <img  width="320" height="180" src="http://i1.ytimg.com/vi/T6SmnPrfH-Q/mqdefault.jpg" />
+                      
+                   </div>
+                    
+                    <a href="http://www.youtube.com/watch?v=T6SmnPrfH-Q"> <p class="subtitle">Copias de seguridad en la nube</p></a>
+                    <div class="ContenidoIzquierda">
+                       <p>En este vídeo aprenderemos a configurar Digi3D para realizar copias de seguridad incrementales en una carpeta de DropBox.</p>
+                          
+                    
+                    </div>
+      </div>   
+
+<div class="Novedad">
+                   
+                    <div class="ContenidoDerecha">
+                       <img  width="320" height="180" src="http://i3.ytimg.com/vi/BnQhjsPuMRg/mqdefault.jpg" />
+                      
+                   </div>
+                    
+                    <a href="http://www.youtube.com/watch?v=BnQhjsPuMRg"> <p class="subtitle">Importando un proyecto de Inpho con calibración de cámara con grid</p></a>
+                    <div class="ContenidoIzquierda">
+                       <p>En este vídeo vamos a comprobar cómo cargar un modelo estereoscópico en formato Inpho con archivo de calibración de cámara mediante grid..</p>
+                          
+                    
+                    </div>
+      </div>  
+
+<div class="Novedad">
+                   
+                    <div class="ContenidoDerecha">
+                       <img  width="320" height="180" src="http://i4.ytimg.com/vi/GZxRaJOs7E0/mqdefault.jpg" />
+                      
+                   </div>
+                    
+                    <a href="http://www.youtube.com/watch?v=GZxRaJOs7E0"> <p class="subtitle">Cambios en el importador de aerotriangulaciones</p></a>
+                    <div class="ContenidoIzquierda">
+                       <p>En este vídeo vamos a aprender a utilizar el nuevo importador de aerotriangulaciones y comprobar que ya no se generan archivos de relativa y absoluta..</p>
+                          
+                    
+                    </div>
+      </div>
+
+<div class="Novedad">
+                   
+                    <div class="ContenidoDerecha">
+                       <img  width="320" height="180" src="http://i2.ytimg.com/vi/apFevrJ10iU/mqdefault.jpg" />
+                      
+                   </div>
+                    
+                    <a href="http://www.youtube.com/watch?v=apFevrJ10iU"> <p class="subtitle">Importación de modelos Blk de orima (cámara cónica)</p></a>
+                    <div class="ContenidoIzquierda">
+                       <p>En este vídeo vamos a comprobar lo sencillo que es cargar modelos aerotriangulados con Orima en formato .blk</p>
+                          
+                    
+                    </div>
+      </div>
+
+<div class="Novedad">
+                   
+                    <div class="ContenidoDerecha">
+                       <img  width="320" height="180" src="http://i4.ytimg.com/vi/k7Jh5Ye5VH4/mqdefault.jpg" />
+                      
+                   </div>
+                    
+                    <a href="http://www.youtube.com/watch?v=k7Jh5Ye5VH4"> <p class="subtitle">Archivos binarios de doble precisión</p></a>
+                    <div class="ContenidoIzquierda">
+                       <p>En este vídeo vamos a comprobar las características de los archivos binarios de doble precisión...</p>
+                          
+                    
+                    </div>
+      </div>
+
+<div class="Novedad">
+                   
+                    <div class="ContenidoDerecha">
+                       <img  width="320" height="180" src="http://i2.ytimg.com/vi/YsiAYTb-nz4/default.jpg" />
+                      
+                   </div>
+                    
+                    <a href="http://www.youtube.com/watch?v=YsiAYTb-nz4&feature=channel&list=UL"> <p class="subtitle">Archivos inerciales de AeroOffice EGM2008 EMG96</p></a>
+                    <div class="ContenidoIzquierda">
+                       <p>En este vídeo vamos a aprender a cargar archivos de inerciales proporcionados por la casa de vuelos y cómo transformar coordenadas Z elipsoidales en ortométricas...</p>
+                          
+                    
+                    </div>
+      </div>
+
+    </body>
+</html>

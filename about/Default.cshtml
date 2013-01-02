@@ -1,0 +1,83 @@
+﻿@{
+    Layout= "~/Shared/_Layout.cshtml";
+    Page.Title = "Acerca de Digi21.net";
+    Page.head = "Acerca de ...";
+    Page.keywords = "GIS SIG Fotogrametría Topografía Cartografía Ortofoto DTM MDT Aerotriangulación";
+    Page.description="Digi21.net software para GIS SIG topografía cartografía y fotogrametría digital"; 
+}
+
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+      
+    </head>
+    <body>
+            <div class="post">
+                <p class="subtitle">La historia de Digi21</p>
+                 <p>La historia de DIGI empezó en el año 1988 cuando tres empresas de fotogrametría españolas DIGICART en Alcoy, VALVERDE en Madrid y TOPOLEV en Murcia </p>
+ <p>me encargaron simultáneamente que les hiciera un programa que registrara coordenadas modelo en sus restituidores analógicos asistidos con codificadores</p>
+ <p>y que realizará la orientación absoluta.</p>
+
+  <p> Después que las coordenadas modelo registradas por los codificadores se fueran transformado en coordenadas terreno y almacenando en un fichero.
+   <p>Esto lo programe en Turbo Basic, ya tenía bastante experiencia con ese lenguaje de programación pues con él hice el programa de cálculos topográficos 
+                    <strong>TOPCAL</strong>.
+   <p>Hay que decir que estas tres empresas ya eran usuarias del programa <strong>TOPCAL</strong> y que lo que querian era que les 
+                    hiciera en lugar de un helmert una transformación de siete parámetros ajustada 
+                    por mínimos cuadrados.<p>&nbsp;Lo primero que tuve que hacer fue estudiar las 
+                    tranformaciones de semejanza en el plano y en el espacio. Para ello busqué en la 
+                    revista del colegio de Ingenieros Técnicos en Topografía una serie de 
+                    publicaciones de Luis Domingo Clavo, por cierto alguién al que conocí y admiré 
+                    desde que yo era un niño cuando iba a ver a mi padre al IGN .<p>Programé la 
+                    matriz de Rodrigues y la de Shut. Luego con el tiempo utilice los parámetros asi 
+                    calculados como valores aproximados en las ecuaciones de colinealidad 
+                    linealizadas para ajustar el sistema de ecuaciones por mmcc.<p>Sólo registrar coordenadas, enseguida 
+                    les pareció&nbsp; poca cosa, aunque hay que recordar que de aquella época era el Topodata R2 que solamente hacia eso. La visualización 
+                    o la edición eran otro mundo. 
+
+<p>Se empieza el primer DIGI, que registraba en formato ascii, por cierto el mismo 
+    ascii de Digi que muchos conoceis y que sigue siendo más o menos el actual. Luego se transformaba a DXF para verlo o editarlo en Autocad 2.6. 
+    Seguimos en el año 1988 y la primavera de 1989<p>Cuado se visualizaba la restitución en Autocad 
+                    se veía que nada estaba “enganchado”, que faltaban cosas otras estaban dos 
+                    veces, por no decir nada de la codificación que casi nunca era la correcta.<p>La solución que me pidieron fue que se fuera ploteando en línea al tiempo que se restituía. 
+                    <strong>DIGI</strong> debía enviar comandos al ploter para dibujar lo que registraban. Los ploter eran unos Keuffel&Essel, 
+                    de los que no teníamos los manuales, toda una odisea, la de noches que pasamos 
+                    en Murcia intentando dibujar on-line. Esto es lo que hacía el Plancar de San 
+                    Leandro, pero con un ploter Benson y un ordenador Whitechapel en unix, la broma 
+                    costaba 14 millones de pesetas de la época y muchas empreas lo compraron.<p>DIGI tenía que dibujar en pantalla lo que se restituía para controlar el trabajo, se incorporaron dos órdenes para visualizar, zoom extendido y zoom ventana. 
+                    En aquella época todas las órdenes de Autocad 2.6 cabían en un menú a la izquierda de la pantalla, tampoco eran muchas. 
+
+<p>Para dibujar surge la necesidad de establecer una simbología, al menos de colores y grosores para las líneas, también hay que clasificar la información geográfica mediante códigos, adoptamos TTGGSS como en catastro, 6 dígitos para cada tipo de elemento. A esto le llamamos 
+    <strong>DIGI.TAB</strong>
+
+
+<p>Para mejorar las prestaciones del programa, dibujar con velocidad o buscar en el fichero para “enganchar” se reprogramó todo en “<strong>C</strong>” de Borland.
+
+
+<p>DIGI va creciendo con la incorporación de nuevas ordenes tanto para registro como para edición, al mismo tiempo otras empresas de fotogrametría van adquiriendo DIGI y se crea un flujo de información entre estas y los programadores, desarrollando todas las sugerencias que se nos hacían.  
+
+<p>En el año 1992 el Servicio Geográfico del Ejército hoy <strong>Centro Cartográfico del Ejército</strong> saca a concurso público para la renovación de los equipos de captación de datos de fotogrametría. Antes de la adjudicación permite que cada una de las empresas licitantes instale un equipo durante un periodo de 
+    3 meses para su evaluación, realizando la restitución completa de una Hoja del Mapa 1:50.000
+
+<p>El programa con mejores prestaciones es DIGI y se gana la adjudicación, instalando DIGI en todos los restituidores del Servicio Geográfico del Ejército, donde han seguido trabajando hasta la fecha.
+
+<p>Este es uno de los <strong>hitos</strong> más importantes en la historia de DIGI. 
+
+<p>En este periodo se desarrollan muchos programas de control de calidad de la cartografía. 
+    <strong>Zfija</strong>, <strong>Zerror</strong>, <strong>Noderror</strong>, etc. Con el objeto de poder realizar una cartografía que pueda ser cargada en un Sistema de Información Geográfica.
+
+<p>En el año 1994 se desarrollan los programas <strong>Bintram</strong> y <strong>Bintop</strong> con algoritmos súper rápidos para la corrección geométrica y la formación de topologías de área. También se añade al formato DIGI atributos que permiten relacionar la información gráfica con 
+    <strong>Bases de Datos</strong>, entonces DBase IV . Se desarrollan los programas de 
+    <strong>Catastro</strong>, que permitían leer y escribir el formato del <strong>CCGG</strong> y realizar un exhaustivo control de calidad.
+
+<p>En el año 1995 se incorpora José Juan para realizar trabajos de jefe de producción y desarrollo de aplicaciones.
+
+<p>En el año 1997 se pasa DIGI a Windows, dejando sólo los programas que funcionan en bach en MSDOS. En este periodo se incorpora José Angel al desarrollo de programas.
+
+<p><strong>Manuel Quirós Donate</strong></p>
+    
+    
+            </div>
+    </body>
+</html>

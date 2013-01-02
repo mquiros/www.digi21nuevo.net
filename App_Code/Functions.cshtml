@@ -1,0 +1,9 @@
+﻿@using System.Text.RegularExpressions;
+
+@functions{
+    public static bool IsValidEmail(string s)
+    {
+        string pattern = @"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$";
+        return Regex.IsMatch(s,pattern);
+    }
+}

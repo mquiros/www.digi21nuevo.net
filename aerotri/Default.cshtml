@@ -1,0 +1,369 @@
+﻿@{
+  Layout= "~/Shared/_Layout.cshtml";
+    Page.Title = "Bienvenido a Aertri";
+    Page.head = "Aerotri";
+    Page.keywords = "Aerotriangulación Triangulación aérea Calibración de cámaras digitales Estimadores robustos método de haces ";
+    Page.description="Digi21.net presenta la nueva versión de Aerotri";   
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        @RenderPage("~/Shared/_Desplegables.cshtml")  
+    </head>
+    <body>
+            <div id="contentIz">
+                                          <div class="post">
+								
+								<p class="subtitle">Cálculo de aerotriangulaciones</p>
+								<p>El ajuste del bloque se realiza por el método de haces, el más preciso y potente ya que utiliza todos los datos en conjunto, aprovechando las observaciones al máximo. A la potencia del método de haces se le añaden las técnicas de ajuste robusto para la detección automática de observaciones erróneas, ya sea en las fotocoordenadas, puntos de apoyo o datos GPS/INS,
+		                        así como la estimación de parámetros de <b>autocalibración</b>, empleando para ello el modelo desarrollado para el módulo de calibración.</p>
+				                <p>Aerotri está optimizado respecto al espacio en memoria necesario y, sobre todo, respecto al tiempo de ejecución, haciéndolo la herramienta más adecuada para el ajuste de grandes bloques. Un vuelo de 1000 fotogramas con datos GPS, INS y cálculo de parámetros de autocalibración tarda 20s en un ordenador moderno.</p>
+				                <p>Aerotri utiliza dos o tres ficheros de entrada: fotocoordenadas y al menos uno de entre apoyo y GPS/INS. Genera un fichero con toda la información del ajuste, en formato texto y html, el fichero .ori necesario para las creación de ortofotos y la restitución y ficheros .rel y .abs2 para todos los pares. Calcula parámetros de deriva para las observaciones GPS/INS y corrige los datos de ese error.</p>
+				                <p>Se genera un gráfico del vuelo, con una representación precisa de los fotogramas sobre el terreno, los puntos y las elipses de error. Este gráfico se puede guardar en formato dgn, tanto 2D como 3D, incluso con coordenadas UTM y precisión de milímetros; así como en el formato bin de Digi. Se genera también una hoja resumen en formato <b>pdf</b>.</p>
+				                <p><img src="Hojapdf.gif" alt="Ejemplo de hoja pdf"></p>
+                                </br>
+                                <p class="subtitle">Calibración de cámaras</p>
+                                <p>El módulo de calibración se basa en un modelo de distorsión diseñado para permitir modelar la distorsión de cualquier cámara con proyección central, desde
+		                        cámaras métricas, ya sean analógicas o digitales, a cámaras amateur. Los parámetros son independientes unos de otros y, de todas las posibles combinaciones
+		                        orientación/distorsión, el programa siempre obtiene aquélla para la cual la distorsión es mínima.
+				                <p>El resultado de la calibración puede ser leído por Digi (hay que instalar el plugin PluginCalibra) que corrige de forma continua la distorsión al moverse sobre la foto y en los ficheros generados.</p>
+				                </br>
+                                <p class="subtitle">Modelos</p>
+                                <p>Se incluye un módulo de transformación de modelos, que calcula una transformación de semejanza tridimensional (con la opción de no incluir un factor
+		                        de escala) entre dos sistemas de coordenadas, y transforma todos los puntos al sistema de referencia, incluyendo la matrices de giro de centros de proyección, si existen.
+				                <p>El algoritmo empleado proporciona una solución rigurosa y rápida, con un 	tiempo de cálculo lineal respecto al número de puntos,  haciendo del programa
+		                        una herramienta idónea para el cálculo de parámetros de transformación entre dos sistemas cuando se tiene un gran número de puntos.
+				                <p><img src="grafico.png" alt="Aerotri screenshot"></p>
+                               
+                            </div>
+                             
+                            </br>
+
+                             <div class="post" data-collapse="accordion">
+
+                                 <h3>Histórico de Aerotri...</h3>
+                                  
+                                 <div>
+     
+                                    <p id="fecha">27 de febrero</p>
+	 
+		                            <p>El fichero .art de trabajo guarda rutas relativas para los ficheros.</p>
+	                                <p id="fecha"></p>23 de febrero de 2012</p>
+	 
+		                            <p>Actualizado Aerotri a .NET Framework 4.0.</p>
+	                                <p id="fecha">Aerotri 2012 29 de noviembre de 2011</p>
+	 
+		                            <p>Aerotri ya no necesita tener instalado .NET Framework 1.1</p>
+	                                <p id="fecha">4 de octubre</p>
+	 
+		                            <p>Cambiado el fichero .ori.xml.</p>
+	                                <p id="fecha">28 de septiembre</p>
+	 
+		                            <p>Arreglado un fallo por el que el programa a veces no conseguía calcular aunque estuviese todo bien.</p>
+	                                <p id="fecha">22 de septiembre</p>
+	 
+		                            <p>Encontrada una causa por la que el programa a veces se cerraba. </p>
+	                                <p id="fecha">20 de septiembre</p>
+	 
+		                            <p>Si se pide la generación de ficheros .abs o .abs2 pero no .rel ni .mod, aquéllos se generan en relación a ficheros .mod existentes.	 </p>
+	                                <p id="fecha">2 de agosto</p>
+	 
+		                            <p>Corregido el fallo por el cual en algunos casos en los que se pedía puntos de apoyo fijos éstos no se mantenían fijos.</p>
+                                    <p>Mejorada la robustez cuando hay datos GPS/INS. Ahora normalmente calcula a la primera.</p>
+		                            <p>Añadida la herramienta ajs2gra.</p>
+	                                <p id="fecha">22 de julio</p>
+	 
+		                            <p>Cuando hay varios puntos de apoyo repetidos se generá un fichero, apoyo_repetidos.txt, con todos los puntos repetidos.</p>
+	                                <p id="fecha">10 de julio</p>
+	 
+		                            <p>Cambios internos.</p>
+		                            <p>Corregido el cambio de tamaño de la ventana, que se había estropeado	en una de las últimas versiones.</p>
+		                            <p>Añadida la herramienta kUTM.</p>
+	                                <p id="fecha">24 de junio</p>
+	 
+		                            <p>Corregido un error en el cálculo de valores aproximados en casos con	fotogramas con muy pocos puntos.</p>
+		                            <p>Corregido unos errores en Modelos que hacían que el programa se saliese en algunos casos.</p>
+	                                <p id="fecha">3 de junio (v. 3.9)</p>
+	 
+		                            <p>Desde la versión del 23 de abril los ficheros .d3d no se estaban	teniendo en cuenta para el orden de los modelos en cada pasada.	Corregido</p>
+	                                <p id="fecha">2 de junio</p>
+	 
+		                            <p>Corregido un error en los últimos valores de la matriz de residuos medios en el fichero .html.</p>
+		                            <p>El cálculo de valores aproximados requiere menos memoria y se mejora la velocidad para bloques grandes.</p>
+	                                <p id="fecha">28 de mayo</p>
+	 
+		                            <p>Corregidos algunos errores que se ponían de manifiesto en casos	raros.</p>
+		                            <p>Mejorada ligeramente la velocidad y el espacio de memoria requerido	para bloques muy grandes.</p>
+	                                <p id="fecha">23 de mayo</p>
+	 
+		                            <p>Corregido un error de las últimas versiones, por el que el cálculo	de valores aproximados se detenía tras una relativa con 5 puntos en
+		                            común, aun cuando ésta era correcta.</p>
+		                            <p>Mejorada ligeramente la velocidad para bloques muy grandes.</p>
+	                                <p id="fecha">17 de mayo</p>
+	 
+		                            <p>Se añade la posibilidad de indicar un fichero semilla a la hora de
+		                            exportar a dgn. Corregido un error en la escritura del origen global y
+		                            en las coordenadas Z (error constante).</p>
+	                                <p id="fecha">23 de abril (v. 3.8)</p>
+	 
+		                            <p>Se añaden los sistemas de coordenadas Mercator y Estereográfica</p>
+		                            <p>Para la generación de ficheros de pares (.rel, etc.) se puede
+		                            seleccionar entre tres modos para generar más o menos pares.</p>
+		                            <p>Se añade la herramienta cmr2int para transformar ficheros de cámara de Image Master a ficheros de interna de Aerotri.</p>
+	                                <p id="fecha">5 de abril</p>
+	 
+		                            <p>La opción "Calcular fotogramas intermedios del fichero GPS/INS"
+		                            también extrapola a los puntos GPS/INS de cada pasada fuera del
+		                            intervalo medido.</p>
+	                                <p id="fecha">31 de marzo</p>
+	 
+		                            <p>En caso de error en el cálculo de valores aproximados el programa
+		                            informa del modelo erróneo, si lo hay.</p>
+		                            <p>Añadida un fichero de valores ajustados en formato xml.</p>
+		                            <p>Añadida la generación de ficheros para ImageMaster</p>
+		                            <p>Reorganizada la ventana del programa.</p>
+		                            <p>Continúan los cambios internos</p>
+	                                <p id="fecha">17 de marzo</p>
+	 
+		                            <p>Al calcular guarda automáticamente el trabajo
+		                            <p>Corregido un defecto de la exportación a dgn</p>
+	                                <p id="fecha">11 de marzo</p>
+	 
+		                            <p>Arreglado el fallo por el que la generación de ficheos .f y .mod se	activaba sola.</p>
+		                            <p>Cambios internos</p>
+	                                <p id="fecha">28 de febrero</p>
+	 
+		                            <p>Si se indica un fichero de interna y además se calculan parámetros
+		                            de autocalibración los datos de ambas internas se combinan en un fichero único.</p>
+		                            <p>Corregido un bug en el gráfico.</p>
+	                                <p id="fecha">17 de febrero</p>
+	 
+		                            <p>Corregido un error en la generación de los fotogramas en el gráfico en la última versión.</p>
+	                                <p id="fecha">Aerotri 2011 17 de diciembre de 2010 (v. 3.7)</p>
+	 
+		                            <p>Mayor detalle en la representación de los fotogramas en el gráfico.   </p>
+	                                <p id="fecha">17 de diciembre <strong>Último Aerotri 2009</strong></p>
+	 
+		                            <p>Corregido un error en la generación del fichero de interna de la	autocalibración.</p>
+	                                <p id="fecha">17 de noviembre</p>
+	 
+		                            <p>El cálculo es mucho más robusto si se dispone de datos GPS/INS para	todas la fotografías.</p>
+	                                <p id="fecha">28-29 de octubre</p>
+	 
+		                            <p>Se generan ficheros abs2 también para sistema geográfico.
+		                            <p>La posibilidad de cambiar el tamaño de las ventanas desde arriba
+		                                solamente funcionaba para la vista clásica de las ventanas de Windows.
+		                                Ahora ya funciona también para la vista de Windows XP.</p>
+	                                 <p id="fecha">24 de octubre</p>
+	 
+		                            <p>El tabulador pasa correctamente de un control a otro.</p>
+		                            <p>Simplificado el menu de Aerotri Manager.</p>
+	                                <p id="fecha">23 de octubre</p>
+	 
+		                            <p>La versión del 18 de octubre mostraba mal los nombres de los puntos	en el visor de residuos del ajuste. Arreglado.</p>
+	                                <p id="fecha">18 de octubre (v. 3.7)</p>
+	 
+		                            <p>Varias mejoras.</p>
+		                            <p>El cálculo de valores aproximados necesita ligeramente menos	memoria.</p>
+		                            <p>Arreglado un defecto en la recarga de ficheros en el editor de texto.</p>
+	                                <p id="fecha">6 de octubre</p>
+	 
+		                            <p>Mejorado el cálculo de valores aproximados: Se disminuye el tiempo a
+		                            la mitad, necesita menos memoria y se mejora el proceso para focales muy largas.</p>
+		                            <p>Numerosas pequeñas correcciones.</p>
+	                                <p id="fecha">22 de julio</p>
+	 
+		                            <p>El editor de texto se acuerda de la posición al recargar un fichero.  </p>
+	                                <p id="fecha">15 de julio (v. 3.6)</p>
+	 
+		                            <p>Aerotri con autocalibración</p>
+		                            <p>Corregido un error en el gráfico: las esquinas de las fotos aparecían mal (se notaba en bloques grandes).</p>
+	                                <p id="fecha">23 de mayo (v. 3.5)</p>
+	 
+		                            <p>Aumentada considerablemente la velocidad para bloques grandes, así
+		                                como una disminución en más de la mitad del espacio de memoria	requerido.</p>
+		                            <p>El sentido de cada pasada para la generación de los ficheros por
+		                            modelos de Digi (.rel, .abs2, ...) se toma según los fichero .d3d, si existen.</p>
+	                                <p id="fecha">10 de mayo</p>
+	 
+		                            <p>Se pasa a la versión 03 del gráfico (la 02 tuvo desde el principio carácter transitorio).</p>
+		                            <p>El gráfico generado por Calibración siempre aprece centrado.</p>
+		                            <p>Cambios internos generalizados</p>
+	                                <p id="fecha">9 de abril</p>
+	 
+		                            <p>Corregido un fallo en las coordenadas de los fichero bin y dgn	exportados.</p>
+	                                <p id="fecha">1-3 de abril</p>
+	 
+		                            <p>Corregido un defecto en el cálculo de valores aproximados introducido en noviembre.</p>
+		                            <p>Eliminada la generación del fichero .cam en Calibración.</p>
+		                            <p>Corregida la lectura de los ficheros GPS/INS de AeroOffice, que	estaba mal en las últimas versiones.</p>
+	                                 <p id="fecha">27 de marzo</p>
+	 
+		                            <p>Simplificada la interfaz de Calibración.</p>
+	                                <p id="fecha">19 de marzo</p>
+	 
+		                            <p>Corregido un fallo en el gráfico de Calibración: no se mostraban los	residuos.</p>
+	                                <p>18 de marzo</p>
+	 
+		                            <p>Arreglada la exportación a dgn.</p>
+	                                <p id="fecha">10 de marzo</p>
+	 
+		                            <p>Cambios internos y pequeñas correcciones.</p>
+	                                <p id="fecha">5 de marzo</p>
+	 
+		                            <p>Mejora del visor de residuos del ajuste.
+		                            <p>Conexión de Calibración al gráfico.</p>
+	                                <p id="fecha">23 de febrero</p>
+	 
+		                            <p>Pequeña simplificación de la interface y los acceso directos. </p>
+	                                <p id="fecha">15-17 de febrero</p>
+	 
+		                            <p>Cambiada la generación de ficheros rel y abs2 de Digi.</p>
+	                                <p id="fecha">9 de febrero</p>
+	 
+		                            <p>Más cambios internos y pequeñas correcciones.</p>
+	                                <p id="fecha">2 de febrero</p>
+	 
+		                            <p>Deducción de las pasadas y los modelos para los fichero de Digi. Ya	no supone que el orden es necesariamente el del fichero de fotogramas.	   </p>
+	                                <p id="fecha">27 de enero</p>
+	 
+		                            <p>Cambios internos. Corrección de algún bug.</p>
+	                                <p id="fecha">4 de enero de 2010</p>
+	 
+		                            <p>Añadidas más componentes asimétricas al programa de Calibración.</p>
+		                            <p>Se muestran en el manual de Calibración las gráficas de todas las componentes de distorsión.</p>
+	                                <p id="fecha">21 de diciembre (v. 3.4)</p>
+	 
+		                            <p>Un cálculo largo no deja el proceso bloqueado; se puede pinchar en las otras pestañas.</p>
+		                            <p>En el gráfico:</p>
+		                            <p>-- Añadido hacer zoom con la rueda</p>
+		                            <p>-- Añadido el nuevo formato del fichero de configuración. Véase su
+		                                definición en FormatoGrafico.txt. Todavía no es editable desde el
+		                                programa (ha de modificarse el fichero a mano y volver a abrir el
+		                                gráfico). El formato antiguo sigue siendo el formato por defecto.	 </p>
+	                                <p id="fecha">30 de noviembre</p>
+	 
+		                            <p>La información de posibles puntos de apoyo erróneos en caso de error
+		                            no era correcta desde la versión de julio u octubre. Arreglado</p>
+		                            <p>Varios arreglos.</p>
+	                                <p id="fecha">12 de noviembre</p>
+	 
+		                            <p>Los ficheros .rel y .abs incluyen los puntos del modelo. Se generan
+		                            también ficheros .abs2 y .mod. La fotografía izquierda se escribe
+		                            siempre la primera.</p>
+		                            <p>Se puede calibrar con coordenadas 'y' aumentando hacia abajo	(píxeles)</p>
+	                                <p id="fecha">3 de octubre</p>
+	 
+		                            <p>Se puede cambiar el tamaño de las ventanas dede arriba</p>
+		                            <p>Arreglado el fichero .cam que genera Calibración</p>
+		                            <p>Cambiado el formato de gráfico a la versión 02 (transitoria)</p>
+		                            <p>Corregido un fallo en la interpolación de cc.pp. con GPS/INS</p>
+	                                <p id="fecha">19 de julio</p>
+	 
+		                            <p>Añadida la "mano" en el gráfico</p>
+		                            <p>Modelos polinómicos definitivos en Calibración</p>
+	                                <p id="fecha">12 de junio (v. 3.3)</p>
+	 
+		                            <p>Simplificados los formatos de los ficheros de entrada</p>
+		                            <p>Reorganizado el sistema de distorsiones asimétricas. Se añade un	modelo nuevo.</p>
+		                            <p>Ya no es necesario indicar la semidiagonal al calibrar. El programa	la estima.</p>
+		                            <p>Simplificado el fichero de salida de Calibración</p>
+		                            <p>Varios cambios internos</p>
+	                                <p id="fecha">25 de abril (v. 3.2)</p>
+	 
+		                            <p>En caso de error en la lectura de ficheros el mensaje es más	informativo.</p>
+		                            <p>Lee ficheros de apoyo XYZ (sin la marca -pp)</p>
+		                            <p>Eliminadas ciertas opciones obsoletas</p>
+		                            <p>Corregio el error en la interpolación de fotogramas intermedios
+		                            cuando se calculaba con tipo INS = 2.</p>
+		                            <p>Añadida la opción «Offset» para los datos INS. Calcula un error
+		                            constante único para todas las pasadas.</p>
+	                                <p id="fecha">9 de marzo (v. 3.1)</p>
+	 
+		                            <p>Se puede calcular en coordenadas geográficas.
+		                            <p>Extensión del formato de gráfico, para que muestre y exporte
+		                            correctamente ficheros con coordenadas geográficas. (Los ficheros con
+		                            este sistema de coordenadas no se mostrarán correctamente en versiones	anteriores de Gráfico)</p>
+	                                <p id="fecha">febrero</p>
+	 
+		                            <p>Lee directamente ficheros de GPS/INS de Espasa (formato AeroOffice).</p>
+
+		                            <p>Añadidos en Calibración los modos «Píxeles / mm» y «Píxeles / micras».</p>
+		                            <p>Los ficheros de salida de calibración muestran los números seguidos	de sus unidades.</p>
+	                                <p id="fecha">Aerotri 2009 (enero)</p>
+	 
+		                            <p>Para recubrimientos del 80%, con fichero de GPS/INS, es posible
+		                            medir solamente uno de cada dos fotogramas (o uno de cada tres si el
+		                            recubrimiento es del 85%, etc.), y Aerotri calcula los intermedios.</p>
+		                            <p>Nueva opción «mixto» en datos GPS/INS para el parámetros en
+		                            tipo&nbsp;2. Toma automáticamente tiempo o distancia (toma la distancia
+		                            si no hay datos de tiempo).</p>
+		                            <p>En los ficheros de salida los números aparecen seguidos de sus
+		                            unidades y las precisiones del INS se muestran también en minutos y  segundos.</p>
+
+
+							</div>
+                            </div>
+            </div>
+
+             <div id="contentDz">
+                                       <section>
+	                              								
+                            <a href="http://download.digi21.net/Aerotri2012.exe" class="button">Descargar Aerotri 2012 </a>
+  						
+                           
+
+	    				</section>
+
+
+						<section>
+							<div>
+                                <h2 >Descargas de Aerotri</h2>
+								<img src="/images/aerotrithumbnail.gif" width="350" alt="Icono Aerotri" />
+				                <p>Ajuste de bloques por el método de haces con posibilidad<br>
+				                de datos GPS/INS y detección automática de errores groseros<br>
+				                mediante técnicas de estimación robusta. Sencillo e intuitivo.<br> 
+				                Incluye parámetros de autocalibración. Sin límite de fotogramas ni de puntos.</p>
+							</div>
+                           
+
+	    				</section>
+
+                       <section>
+	                              								
+                            <a href="http://download.digi21.net/Aerotri2012_demo.exe" class="button">Descargar Aerotri Demo </a>
+  						
+                                 								
+                            <a href="http://download.digi21.net/Aerotri2011.exe" class="button">Descargar Aerotri 2011 </a>
+  						
+                                 								
+                            <a href="http://download.digi21.net/Aerotri2009.exe" class="button">Descargar Aerotri 2009 </a>
+  						
+                                								
+                            <a href="http://download.digi21.net/Aerotri2007.exe" class="button">Descargar Aerotri 2007 </a>
+  	
+	    				</section>
+
+                        <section>
+							<div>
+                                <h2 >Utilidades de Aerotri</h2>
+								<a href="http://download.digi21.net/ManualAerotri.zip" class="button">Manual de usuario html</a>
+                                </br>
+				                
+				                <a href="http://download.digi21.net/aerotri.tab.zip" class="button">Tabla de estilos de Digi</a>
+                                <p>Tabla de estilos de Digi para gráficos de Aerotri<br>
+                                </br>
+				                
+				                <a href="http://download.digi21.net/GraficoAerotri.zip" class="button">Visor de gráficos >>>>>></a>
+							    <p>Visor de gráficos generados por Aerotri<br>
+                            </div>
+                            <div class="5grid-layout">&nbsp;</div>
+
+	    				</section>
+            </div>
+           
+    </body>
+</html>

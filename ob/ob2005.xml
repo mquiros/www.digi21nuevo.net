@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='rsspretty.xsl' version='1.0'?>
+<rss version="2.0">
+	<channel>
+		<title>Histórico de versiones de OrthoBatch 2005.</title>
+		<link>http://www.digi21.net/productos/prod_digi3d.htm</link>
+		<description>
+		 Actualizaciones e información relevante del desarrollo de OrthoBatch 2005.
+		</description>
+		<copyright>Copyright 2005 Digi21.net</copyright>
+		<pubDate>Tue, 13 Sep 2005 09:58:00 CEST</pubDate>
+		<image>
+			<title>Digi3D</title>
+			<url>http://www.digi21.net/digi3dthumbnail.jpg</url>
+			<link>http://www.digi21.net/ob</link>
+			<width>152</width>
+			<height>117</height>
+		</image>
+		<item>
+			<title>Liberada la versión 2005.0.19 de OrthoBatch</title>
+			<link>http://www.digi21.net/ob/historico/2005.0.8.html</link>
+			<description><![CDATA[<b>Novedades</b>
+			
+			<ul>
+				<li>Ahora la pestaña de recorte recorta marcos de hojas no rectangulares utilizando el criterio de inclusión especificado en el cuadro de diálogo de configuración.</li>
+			</ul>]]></description>
+			<pubDate>Sat, 5 Aug 2006 12:00:00 CET</pubDate>
+			</item>
+		<item>
+			<title>Liberada la versión 2005.0.18 de OrthoBatch</title>
+			<link>http://www.digi21.net/ob/historico/2005.0.8.html</link>
+			<description><![CDATA[<b>Novedades</b>
+			
+			<ul>
+<li>Corregido un fallo de liberación de memoria en el caso de no poder crear el archivo de salida en el proceso de generación de ortofotos.</li>
+<li>El programa ahora avisa con un mensaje de error si no se indica un prefijo de salida en las pestañas de generación de ortofoto y de ajuste radiométrico y además se indica que el directorio de salida coincide con el directorio de fotos.</li>
+<li>Eliminado prefijo de la pestaña de mezcla/recorte ya que el nombre del archivo de salida se indica como centroide en el archivo de límites de hojas.</li>
+<li>Ahora en ajuste radiométrico en número de iteraciones únicamente se permite seleccionar 1 ó 2 y no teclear un valor aleatorio.</li>
+<li>Cambiados los textos del cuadro de diálogo de configuración, donde antes ponía Parámetro1 y Parámetro2 ahora pone Primera y segunda iteración respectivamente.</li>
+<li>Cambiado el concepto de ancho de primera y segunda iteraciones para el proceso de ajuste radiométrico y de anchos para rústica y urbana para el proceso de mezcla/recorte, que antes se indicaban en número de píxeles y ahora indican metros terreno para posibilitar el hacer un primer cálculo con tamaños de pixel muy grandes para buscar los parámetros de juste radiométrico y de mezcla/recorte óptimos y luego aplicar dichos parámetros con ortofotos con un tamaño de pixel pequeño.</li>
+			</ul>]]></description>
+			<pubDate>Thr, 27 Jul 2006 12:00:00 CET</pubDate>
+			</item>
+		<item>
+			<title>Liberada la versión 2005.0.17 de OrthoBatch</title>
+			<link>http://www.digi21.net/ob/historico/2005.0.8.html</link>
+			<description><![CDATA[<b>Novedades</b>
+			
+			<ul>
+				<li>Ajuste radiométrico en imágenes en tonos de gris.</li>
+				<li>Soporte para trabajar con archivos dxf (límites de pestañas generación de ortofotos y mezcla/recorte) para usuarios sin licencias de Digi.</li>
+				<li>Ya no es obligatorio especificar un prefijo en las pestañas de generación de ortofotos y de ajuste radiométrico.</li>
+			</ul>]]></description>
+			<pubDate>Wed, 26 Jul 2006 12:00:00 CET</pubDate>
+			</item>
+		<item>
+			<title>Liberada la versión 2005.0.16 de OrthoBatch</title>
+			<link>http://www.digi21.net/ob/historico/2005.0.8.html</link>
+			<description><![CDATA[<b>Novedades</b>
+			
+			<ul>
+				<li>Ahora se puede trabajar con varios modelos digitales del terreno que solapen.</li>
+			</ul>]]></description>
+			<pubDate>Mon, 6 Mar 2006 12:00:00 CET</pubDate>
+			</item>
+		<item>
+			<title>Liberada la versión 2005.0.15 de OrthoBatch</title>
+			<link>http://www.digi21.net/ob/historico/2005.0.8.html</link>
+			<description><![CDATA[<b>Novedades</b>
+			
+			<ul>
+				<li>Ahora se generan archivos de georeferenciación asociados a los archivos de miniatura.</li>
+				<li>Modificación en el algoritmo de ajuste radiométrico que ahora crea archivos menos saturados.</li>
+				<li>Ahora en la pestaña de Ajuste Radiométrico, se pueden especificar el número de iteraciones (entre 1 y 2)</li>
+				<li>Ahora en la configuración de ajuste radiométrico se puede especificar un valor máximo de desplazamiento de color para cada canal, para evitar generar imágenes muy diferentes a la original.</li>
+				<li>Se ha cambiado el nombre de la última pestaña que pasa a denominarse "Mezcla/Recorte".</li>
+				<li>Añadida la posibilidad de especificar (opcionalmente) en la pestaña de Mezcla/Recorte un archivo .bin con los límites de cada una de las ortofotos para el recorte final.</li>
+				<li>Añadido un campo en la pestaña de Mezcla/Recorte para indicar el tipo de terreno (urbana, rústica).</li>
+				<li>Añadida en la configuración de recorte valores para especificar el tamaño en píxeles de los solapes para urbana y rústica.</li>
+			</ul>]]></description>
+			<pubDate>Mon, 9 Jan 2006 18:00:00 CET</pubDate>
+			</item>
+		<item>
+			<title>Liberada la versión 2005.0.13 de OrthoBatch</title>
+			<link>http://www.digi21.net/ob/historico/2005.0.8.html</link>
+			<description><![CDATA[<b>Novedades</b>
+			
+			<ul>
+				<li>Eliminado ajuste radiometrico global y añadidos dos pasos para el ajuste de radiometría.</li>
+			</ul>]]></description>
+			<pubDate>Wed, 25 Dec 2005 10:03:00 CET</pubDate>
+			</item>
+		<item>
+			<title>Liberada la versión 2005.0.11 de OrthoBatch</title>
+			<link>http://www.digi21.net/ob/historico/2005.0.8.html</link>
+			<description><![CDATA[<b>Novedades</b>
+			
+			<ul>
+				<li>Incluida ayuda en línea del programa en el menú de Ayuda.</li>
+				<li>Incluida una opción de importación /exportación similar a la de Digi3D versión 2005 en el menú de archivo.</li>
+			</ul>]]></description>
+			<pubDate>Wed, 16 Nov 2005 10:03:00 CET</pubDate>
+			</item>
+		<item>
+			<title>Liberada la versión 2005.0.10 de OrthoBatch</title>
+			<link>http://www.digi21.net/ob/historico/2005.0.8.html</link>
+			<description><![CDATA[<b>Novedades</b>
+			
+			<ul>
+				<li>Añadida la página de recorte por hojas y un botón para cargar las ortofotos en orden.</li>
+			</ul>]]></description>
+			<pubDate>Thr, 10 Nov 2005 10:03:00 CET</pubDate>
+			</item>
+		<item>
+			<title>Liberada la versión 2005.0.9 de OrthoBatch</title>
+			<link>http://www.digi21.net/ob/historico/2005.0.8.html</link>
+			<description><![CDATA[<b>Novedades</b>
+			
+			<ul>
+				<li>Modificado el algoritmo de ajuste radiométrico.</li>
+			</ul>]]></description>
+			<pubDate>Wed, 02 Nov 2005 10:03:00 CET</pubDate>
+			</item>
+		<item>
+			<title>Liberada la versión 2005.0.8 de OrthoBatch</title>
+			<link>http://www.digi21.net/ob/historico/2005.0.8.html</link>
+			<description><![CDATA[<b>Novedades</b>
+			
+			<ul>
+				<li>Añadida la posibilidad de especificar el criterio de inclusión para los píxeles dentro del límite en el cuadro de diálogo de configuracion</li>
+				<li>Ahora el ajuste radiométrico realiza dos pasos: un ajuste global y otro "de solapes" localizando los valores tonales en las intersecciones y generando ajustes con degradado desde el centro de la ortofoto.</li>
+			</ul>
+			
+			<b>Correcciones</b>
+			<ul>
+			<li>Solucionado un problema por el cual el programa generaba archivos TIFF incompletos (les faltaba una línea) y por el cual aplicaciones como PhotoShop no eran capaces de abrirlas.</li>
+			</ul>]]></description>
+			<pubDate>Tue, 13 Sep 2005 10:03:00 CET</pubDate>
+			</item>
+		<item>
+			<title>Liberada la versión 2005.0.7 de OrthoBatch</title>
+			<link>http://www.digi21.net/ob/historico/2005.0.7.html</link>
+			<description><![CDATA[<b>Novedades</b>
+			
+			<ul>
+				<li>Posibilidad de trabajar en diferentes unidades de precisión (centímetros, milímetros, ...)</li>
+				<li>Ahora el programa solicita un archivo de cámara para realizar las correcciones radiométricas.</li>
+			</ul>]]></description>
+			<pubDate>Tue, 13 Oct 2005 10:03:00 CET</pubDate>
+			</item>
+	</channel>
+</rss>
